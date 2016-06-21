@@ -26,7 +26,9 @@ automatically ensures that the password entered matches any other
 ## How do I validate my form?
 `var validated = validate_form(form_id, form_elements_class);`
 `validate_form` accepts 2 parameters --> 
+
 1. `form_id`, which is the `id` of the elements' enclosing `div`, or `form`. It doesn't matter if the enclosing section is a `p`, `span`, a `div` or a `form`, since the library only queries for all elements under the same `id`.
+
 2. `form_elements_class`, which is the class assigned to all the 
 elements that need to be validated. Under the hood, `validate_form` uses 
 `getElementsByClassName`, so all the elements in a form need to have the 
